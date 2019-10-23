@@ -18,8 +18,8 @@
 
 @implementation IjkplayerPlugin {
     // CoolFlutterIjkManager *manager;
-    MPVolumeView *volumeView;
-    UISlider *volumeViewSlider;
+    // MPVolumeView *volumeView;
+    // UISlider *volumeViewSlider;
     NSObject *obj;
 }
 
@@ -63,7 +63,7 @@
 
 - (void)handleMethodCall:(FlutterMethodCall *)call result:(FlutterResult)result {
     
-        [self invokeMethod:self->obj methodName:@"handleMethodCall:" param:param];
+        [self invokeMethod:self->obj methodName:@"handleMethodCall:" param:call];
 
 //     dispatch_queue_t mainQueue = dispatch_get_main_queue();
 // //    __weak typeof(&*self) weakSelf = self;
